@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Myheader from './components/Myheader';
 import Nav from './components/Nav';
@@ -34,7 +33,7 @@ class App extends Component {
     return data;
   }
   getArticles(){
-    let _title, _desc, _article = null;
+    let _article = null;
     if(this.state.mode === 'welcome'){
       let _data = this.state.welcome;
       _article = <Article data={_data} mode={this.state.mode}></Article>;
